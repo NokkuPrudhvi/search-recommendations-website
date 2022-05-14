@@ -15,6 +15,7 @@ var WildRydes = window.WildRydes || {};
         window.location.href = '/signin.html';
     });
 
+    
     function requestApi(pickupLocation) {
         $.ajax({
             method: 'POST',
@@ -51,7 +52,9 @@ var WildRydes = window.WildRydes || {};
     function handleAPIClick(event) {
         console.log(event);
         event.preventDefault();
-        requestApi("working but included text");
+        const querytext = document.getElementById('text-search').value;
+        console.log(querytext);
+        requestApi(querytext);
     }
 
    

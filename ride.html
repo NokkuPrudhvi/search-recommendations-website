@@ -18,8 +18,14 @@
 </head>
 
 <body>
-    <button id="triggerQueryapi" class="btn btn-primary" >Trigger Api</button>
-    
+    <label for="site-search">Please add your requirement text below and click on Query Button:</label>
+    <input type="search" id="text-search" name="q">
+    <button id="triggerQueryapi" class="btn btn-primary" >Query</button>
+    <!-- <p>
+        <input type="search" id="mySearch" name="mySearch">
+        <button id="btn1">Search</button>
+        <p id="demo"></p>
+    </p> -->
     <script src="js/vendor/jquery-3.1.0.js"></script>
     <script src="js/vendor/bootstrap.min.js"></script>
     <script src="js/vendor/aws-cognito-sdk.min.js"></script>
