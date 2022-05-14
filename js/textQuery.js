@@ -51,10 +51,9 @@ var WildRydes = window.WildRydes || {};
         //     html += '<p>Work ' + result.work.base + '</p>';
         //     // html += ' Profile <img src ' + result.image.url + '>';
         //   });
-        console.log(result.toString())
-        console.log(JSON.parse(result))
-        result_str=result.toString()
-        html = '<p>Response received from API ' + result_str + '</p>';
+        console.log(result.Eta)
+        result_id=result.RideId
+        html = '<p>Response received from API ' + result_id + '</p>';
         document.getElementById('queryResult').innerHTML = html;
     }
 
