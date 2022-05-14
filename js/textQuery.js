@@ -41,9 +41,21 @@ var WildRydes = window.WildRydes || {};
 
     function completeRequest(result) {
         console.log('Response received from API: ', result);
+
+        // responseJSON.results.forEach(function (result)  {
+        //     html += '<h2>' + result.name + '</h2>';
+        //     // html += "<h2>" + demo.biography.alter-egos + "</h2>";
+        //     html += '<h2>Power Stats ' + result.powerstats.combat + '</h2>';
+        //     html += '<p>Connections ' + result.connections.relatives + '</p>';
+        //     html += '<p>Appearance ' + result.appearance.gender + '</p>';
+        //     html += '<p>Work ' + result.work.base + '</p>';
+        //     // html += ' Profile <img src ' + result.image.url + '>';
+        //   });
+        html = '<p>Response received from API ' + result + '</p>';
+        document.getElementById('queryResult').innerHTML = html;
     }
 
-    // Register click handler for #request button
+    // Register click handler for #triggerQueryapi button
     $(function onDocReady() {
         $('#triggerQueryapi').click(handleAPIClick);
     });
