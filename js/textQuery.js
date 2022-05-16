@@ -54,6 +54,7 @@ var WildRydes = window.WildRydes || {};
         console.log(result.Eta)
         result_id=result.RideId
         html = '<p>Response received from API ' + result_id + '</p>';
+        html += '<p> please check the immediate recommedations. you will get the additional recommendations for 3 days to your mail , when some-one answered your query</p>';
         document.getElementById('queryResult').innerHTML = html;
     }
 
