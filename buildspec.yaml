@@ -36,7 +36,8 @@ phases:
   build:
     commands:
       - echo "working"
-      - aws s3 sync . s3://enable-india-recommendation-project --delete
+      - aws s3 sync . s3://enable-india-website-platform --delete
+      # - aws s3 sync . s3://enable-india-recommendation-project --delete
       # - command
   #post_build:
     #commands:
