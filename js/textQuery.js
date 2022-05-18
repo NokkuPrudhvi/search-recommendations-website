@@ -19,7 +19,7 @@ var WildRydes = window.WildRydes || {};
     function requestApi(pickupLocation) {
         $.ajax({
             method: 'POST',
-            url: _config.api.invokeUrl + '/ride',
+            url: _config.api.invokeUrl + '/query',
             headers: {
                 Authorization: authToken
             },
