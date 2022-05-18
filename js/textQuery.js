@@ -21,7 +21,8 @@ var WildRydes = window.WildRydes || {};
             method: 'POST',
             url: _config.api.invokeUrl + '/query',
             headers: {
-                Authorization: authToken
+                Authorization: authToken,
+                'Access-Control-Allow-Origin': '*'
             },
             data: JSON.stringify({
                 PickupLocation: {
